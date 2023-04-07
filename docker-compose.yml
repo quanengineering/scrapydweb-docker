@@ -15,4 +15,6 @@ services:
       context: ./scrapyd
     ports:
       - "6800:6800"
+    volumes:
+      - ./scrapyd.conf:/root/.scrapyd.conf
     # restart: always
